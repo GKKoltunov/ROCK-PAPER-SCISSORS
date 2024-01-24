@@ -115,6 +115,7 @@ button:hover{
 }
 
 .robot{
+  transform: rotate(45deg);
   position: absolute;
   left: 0;
   top: 10%;
@@ -126,6 +127,7 @@ button:hover{
 }
 
 .human{
+  transform: rotate(-45deg);
    position: absolute;
   right: 0;
   top: 10%;
