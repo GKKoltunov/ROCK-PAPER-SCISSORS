@@ -19,7 +19,6 @@ function randomChoise() {  //рандомный вариант компьюте�
     "./images/robot-paper.png",
   ];
   robot.src = `${arr[random - 1]}`
-  console.log(random)
   return random
 }
 
@@ -46,7 +45,8 @@ function revBtns() {
 }
 
 rock.addEventListener('click', function () {  //нажатие на кнопку "камень"
- changeBtns();
+  changeBtns();
+  let random = randomChoise();
   if (random === 1) {
     message.textContent = 'IT`S A DRAW'
   } else if (random === 2) {
